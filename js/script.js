@@ -22,6 +22,12 @@ if (menuToggle && siteNav) {
 
 if (resumeOpenLink && resumeModal && resumeCloseBtn && resumeBackdrop) {
     resumeOpenLink.addEventListener("click", function (event) {
+        const isMobile = window.matchMedia("(max-width: 700px)").matches;
+
+        if (isMobile) {
+            return;
+        }
+
         event.preventDefault();
         resumeModal.classList.add("show");
         resumeModal.setAttribute("aria-hidden", "false");
