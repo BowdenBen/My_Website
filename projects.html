@@ -64,21 +64,79 @@
                 </article>
 
                 <article class="project-full">
-                    <p class="card-tag">Embedded Systems</p>
-                    <h2>RP2040 Sensor and Control Development</h2>
-                    <p>
-                        Embedded development using Pico SDK, CMake, and peripheral interfaces
-                        for hardware-focused projects involving sensing, timing, interrupts, and control.
-                    </p>
-                    <ul>
-                        <li>C / C++</li>
-                        <li>GPIO, I2C, timers</li>
-                        <li>Debugging and build workflows</li>
-                    </ul>
+                    <div class="project-layout project-layout-hardware">
+                        <div class="project-header">
+                            <p class="card-tag">Embedded Systems + Hardware</p>
+                            <h2>Sensor and Control Panel</h2>
+                        </div>
+
+                        <div class="project-media">
+                            <div class="project-image-grid">
+                                <figure class="project-image-card">
+                                    <img src="images/baby_monitor_edge_computer.png"
+                                        alt="Baby monitor daughterboard PCB">
+                                </figure>
+
+                                <figure class="project-image-card">
+                                    <img src="images/wireframe_baby_monitor.png" alt="Baby monitor system wireframe">
+                                </figure>
+
+                                <figure class="project-image-card project-image-card-wide">
+                                    <img src="images/Schematic_rPI.png" alt="Baby monitor schematic">
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <p>
+                                This project was my main hardware contribution to the smart baby monitor system.
+                                I led the initial schematic and PCB design, then worked through the practical side
+                                of bringing the daughterboard to life around the RP2040 and its sensor stack.
+                            </p>
+
+                            <p>
+                                The work combined board-level design, sensor integration, and real debugging. It
+                                included the PIR motion sensor, temperature and humidity monitoring, and the wider
+                                control structure needed to support logging, alerts, and communication with the main
+                                system.
+                            </p>
+
+                            <p>
+                                What makes this project valuable to me is that it shows more than just assembly. It
+                                reflects the way I approach hardware design from first schematic through to
+                                troubleshooting, iteration, and system-level thinking, while also stepping up into a
+                                leadership role within the project. As Hardware Engineering Manager, I took ownership of
+                                the schematic and PCB design process, worked closely with the team to keep the hardware
+                                side moving, and contributed through clear communication, collaboration, and
+                                peer-review-driven problem solving. It also drew on the broader strengths I bring from
+                                previous leadership and customer-facing roles: the ability to work well with different
+                                people, keep discussions constructive, and help move a team through technical challenges
+                                without losing momentum.
+                            </p>
+
+                            <ul>
+                                <li>RP2040-based daughterboard design</li>
+                                <li>Schematic capture and PCB layout</li>
+                                <li>Sensor integration and hardware debugging</li>
+                                <li>System-level embedded design thinking</li>
+                            </ul>
+                        </div>
+                    </div>
                 </article>
 
                 <article class="project-full">
-                    <div class="project-split">
+                    <div class="project-layout project-layout-app">
+                        <div class="project-header">
+                            <div class="project-title-row">
+                                <img src="images/bm-adaptive-android-icon.png" alt="Smart Baby Monitor app icon"
+                                    class="project-app-icon">
+                                <div>
+                                    <p class="card-tag">Software + UX</p>
+                                    <h2>Smart Baby Monitor Android App</h2>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="project-media">
                             <div class="project-video project-video-vertical">
                                 <video autoplay muted loop playsinline preload="metadata">
@@ -88,44 +146,29 @@
                             </div>
                         </div>
 
-                        <div class="project-copy">
-                            <div class="project-title-row">
-                                <img src="images/bm-adaptive-android-icon.png" alt="Smart Baby Monitor app icon"
-                                    class="project-app-icon">
-                                <div>
-                                    <p class="card-tag">Software + UX</p>
-                                    <h2>Smart Baby Monitor Android App</h2>
-                                </div>
-                            </div>
-
+                        <div class="project-body">
                             <p>
                                 Built while I was preparing to become a father, this project started as more than just
-                                an Android
-                                development exercise. I wanted to create something practical, well-structured, and
-                                genuinely useful:
-                                an app that could help track the day-to-day details that quickly become important when a
-                                new baby arrives.
+                                an Android development exercise. I wanted to create something practical,
+                                well-structured,
+                                and genuinely useful: an app that could help track the day-to-day details that quickly
+                                become important when a new baby arrives.
                             </p>
 
                             <p>
                                 This was the first phase of a smart baby monitor app built with Kotlin and Jetpack
-                                Compose, and my first
-                                serious experience working in the Android ecosystem with modern architectural patterns.
-                                The app uses
-                                MVVM, repositories, and reactive state to present a clean dashboard showing the latest
-                                feeding, sleep,
-                                measurement, and medication records for a selected baby profile. Local persistence was
-                                handled with Room,
-                                while Firebase Firestore was used for cloud syncing and live updates.
+                                Compose, and my first serious experience working in the Android ecosystem with modern
+                                architectural patterns. The app uses MVVM, repositories, and reactive state to present
+                                a clean dashboard showing the latest feeding, sleep, measurement, and medication records
+                                for a selected baby profile. Local persistence was handled with Room, while Firebase
+                                Firestore was used for cloud syncing and live updates.
                             </p>
 
                             <p>
                                 What I like about this project is that it combines personal motivation with solid
-                                technical foundations.
-                                It pushed me to learn Kotlin, Compose navigation, state management, dependency
-                                injection, and structured
-                                data flow, while also building something tied to a real-life need rather than a purely
-                                theoretical brief.
+                                technical foundations. It pushed me to learn Kotlin, Compose navigation, state
+                                management, dependency injection, and structured data flow, while also building
+                                something tied to a real-life need rather than a purely theoretical brief.
                             </p>
 
                             <ul>
