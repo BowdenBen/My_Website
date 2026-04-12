@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Ben Bowden</title>
-    <meta name="description" content="Projects by Ben Bowden, including electrical engineering, embedded systems, and software development work.">
+    <meta name="description"
+        content="Projects by Ben Bowden, including electrical engineering, embedded systems, and software development work.">
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
     <header class="site-header">
         <div class="container header-inner">
@@ -75,17 +78,64 @@
                 </article>
 
                 <article class="project-full">
-                    <p class="card-tag">Software + UX</p>
-                    <h2>Smart Baby Monitor Android App</h2>
-                    <p>
-                        Mobile application work using Kotlin and Jetpack Compose with local persistence,
-                        cloud sync, dashboard design, and structured app architecture.
-                    </p>
-                    <ul>
-                        <li>Kotlin / Compose</li>
-                        <li>MVVM architecture</li>
-                        <li>Firebase + Room</li>
-                    </ul>
+                    <div class="project-split">
+                        <div class="project-media">
+                            <div class="project-video project-video-vertical">
+                                <video autoplay muted loop playsinline preload="metadata">
+                                    <source src="video/smart_baby_app.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="project-copy">
+                            <div class="project-title-row">
+                                <img src="images/bm-adaptive-android-icon.png" alt="Smart Baby Monitor app icon"
+                                    class="project-app-icon">
+                                <div>
+                                    <p class="card-tag">Software + UX</p>
+                                    <h2>Smart Baby Monitor Android App</h2>
+                                </div>
+                            </div>
+
+                            <p>
+                                Built while I was preparing to become a father, this project started as more than just
+                                an Android
+                                development exercise. I wanted to create something practical, well-structured, and
+                                genuinely useful:
+                                an app that could help track the day-to-day details that quickly become important when a
+                                new baby arrives.
+                            </p>
+
+                            <p>
+                                This was the first phase of a smart baby monitor app built with Kotlin and Jetpack
+                                Compose, and my first
+                                serious experience working in the Android ecosystem with modern architectural patterns.
+                                The app uses
+                                MVVM, repositories, and reactive state to present a clean dashboard showing the latest
+                                feeding, sleep,
+                                measurement, and medication records for a selected baby profile. Local persistence was
+                                handled with Room,
+                                while Firebase Firestore was used for cloud syncing and live updates.
+                            </p>
+
+                            <p>
+                                What I like about this project is that it combines personal motivation with solid
+                                technical foundations.
+                                It pushed me to learn Kotlin, Compose navigation, state management, dependency
+                                injection, and structured
+                                data flow, while also building something tied to a real-life need rather than a purely
+                                theoretical brief.
+                            </p>
+
+                            <ul>
+                                <li>Kotlin / Jetpack Compose</li>
+                                <li>MVVM architecture with ViewModels and repositories</li>
+                                <li>Room for local storage</li>
+                                <li>Firebase Firestore for cloud sync and live updates</li>
+                            </ul>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
@@ -100,4 +150,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

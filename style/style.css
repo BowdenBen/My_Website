@@ -8,7 +8,7 @@
     --muted: #666666;
     --line: #dddddd;
     --dark: #101010;
-    --accent: #d8ff3e;
+    --accent: #1f8f4d;
 
     --max-width: 1180px;
     --radius: 18px;
@@ -849,4 +849,100 @@ a {
     margin-top: 0.65rem;
     background: var(--accent);
     border-radius: 999px;
+}
+
+/* =========================================================
+   PROJECT SPLIT LAYOUT
+========================================================= */
+.project-split {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.project-media {
+    display: flex;
+    justify-content: center;
+}
+
+.project-copy h2 {
+    margin-top: 0;
+}
+
+/* =========================================================
+   PROJECT VIDEO
+========================================================= */
+.project-video {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #000000;
+    box-shadow: var(--shadow);
+}
+
+.project-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-video-vertical {
+    width: 100%;
+    max-width: 260px;
+}
+
+/* =========================================================
+   PROJECT TITLE ROW
+========================================================= */
+.project-title-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-app-icon {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+    box-shadow: var(--shadow);
+}
+
+.project-title-row .card-tag {
+    margin-bottom: 0.3rem;
+}
+
+.project-title-row h2 {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .project-title-row {
+        align-items: flex-start;
+    }
+
+    .project-app-icon {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+@media (max-width: 700px) {
+    .project-split {
+        grid-template-columns: 1fr;
+    }
+
+    .project-media {
+        justify-content: flex-start;
+    }
+
+    .project-video-vertical {
+        max-width: 220px;
+    }
 }
