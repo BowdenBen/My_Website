@@ -1004,3 +1004,16 @@ a {
         max-width: 280px;
     }
 }
+
+/* =========================================================
+   SPRITE
+========================================================= */
+.sprite {
+    width: 120px;
+    height: 120px;
+    background-image: url("images/chibi-business.png");
+    background-repeat: no-repeat;
+    background-size: 720px 720px;
+    background-position: 0 0;
+    image-rendering: pixelated;
+}
