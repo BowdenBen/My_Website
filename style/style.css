@@ -402,6 +402,10 @@ a {
     gap: 1.25rem;
 }
 
+.featured-skill {
+    margin-bottom: 3.5rem;
+}
+
 .timeline {
     display: grid;
     gap: 1.2rem;
